@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Carnivore-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InitialController" title="Carnivore" spacing="10" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carnivore_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Uws-Qi-MTP">
+                            <items>
+                                <timer alignment="center" textAlignment="center" id="lmT-Ic-MEb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <button width="1" alignment="left" title="Start Timer" id="w78-Lo-ASg">
+                                    <connections>
+                                        <action selector="onTimerButton" destination="AgC-eL-Hgc" id="k4d-9B-NiX"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label height="19" alignment="center" text="Weight: 16 oz" id="Slu-KE-aKL"/>
+                        <group width="1" alignment="left" spacing="20" id="6H4-Iy-EtO">
+                            <items>
+                                <button alignment="center" backgroundImage="minus" id="if8-ii-c3g">
+                                    <connections>
+                                        <action selector="onMinusButton" destination="AgC-eL-Hgc" id="w1r-sX-QZd"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" backgroundImage="plus" id="uO8-HA-Cdh">
+                                    <connections>
+                                        <action selector="onPlusButton" destination="AgC-eL-Hgc" id="Fxu-Fh-y02"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="fBK-Pv-P45">
+                            <items>
+                                <label alignment="left" text="Label" id="6eX-9Q-qae"/>
+                                <slider width="1" alignment="left" value="2" maximum="3" steps="3" id="aW7-F7-tcW">
+                                    <connections>
+                                        <action selector="onTempChange:" destination="AgC-eL-Hgc" id="0b1-ND-rvp"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ued-lJ-bgt">
+                            <items>
+                                <switch width="1" alignment="left" title="Metric" id="ahS-9z-W3Z">
+                                    <connections>
+                                        <action selector="onMetricChanged:" destination="AgC-eL-Hgc" id="CsT-dQ-WEm"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cookLabel" destination="6eX-9Q-qae" id="C6e-5J-Cha"/>
+                        <outlet property="timer" destination="lmT-Ic-MEb" id="blN-bJ-F04"/>
+                        <outlet property="timerButton" destination="w78-Lo-ASg" id="NkW-ma-VwD"/>
+                        <outlet property="weightLabel" destination="Slu-KE-aKL" id="vsW-AD-ARG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" width="40" height="40"/>
+        <image name="plus" width="40" height="40"/>
+    </resources>
+</document>
