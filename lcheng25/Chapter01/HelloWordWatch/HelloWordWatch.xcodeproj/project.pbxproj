@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226EB371239E41490077374D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB370239E41490077374D /* AppDelegate.swift */; };
+		226EB373239E41490077374D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB372239E41490077374D /* SceneDelegate.swift */; };
+		226EB375239E41490077374D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB374239E41490077374D /* ViewController.swift */; };
+		226EB378239E41490077374D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226EB376239E41490077374D /* Main.storyboard */; };
+		226EB37A239E414A0077374D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226EB379239E414A0077374D /* Assets.xcassets */; };
+		226EB37D239E414A0077374D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226EB37B239E414A0077374D /* LaunchScreen.storyboard */; };
+		226EB382239E414A0077374D /* HelloWordWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 226EB381239E414A0077374D /* HelloWordWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		226EB388239E414A0077374D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226EB386239E414A0077374D /* Interface.storyboard */; };
+		226EB38A239E414B0077374D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226EB389239E414B0077374D /* Assets.xcassets */; };
+		226EB391239E414B0077374D /* HelloWordWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 226EB390239E414B0077374D /* HelloWordWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		226EB396239E414B0077374D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB395239E414B0077374D /* InterfaceController.swift */; };
+		226EB398239E414B0077374D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB397239E414B0077374D /* ExtensionDelegate.swift */; };
+		226EB39A239E414B0077374D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226EB399239E414B0077374D /* Assets.xcassets */; };
+		226EB3AA239E461C0077374D /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EB3A9239E461C0077374D /* EmojiData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		226EB383239E414A0077374D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226EB365239E41490077374D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226EB380239E414A0077374D;
+			remoteInfo = "HelloWordWatch WatchKit App";
+		};
+		226EB392239E414B0077374D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226EB365239E41490077374D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226EB38F239E414B0077374D;
+			remoteInfo = "HelloWordWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		226EB3A1239E414B0077374D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				226EB391239E414B0077374D /* HelloWordWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EB3A5239E414B0077374D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				226EB382239E414A0077374D /* HelloWordWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		226EB36D239E41490077374D /* HelloWordWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWordWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EB370239E41490077374D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		226EB372239E41490077374D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		226EB374239E41490077374D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		226EB377239E41490077374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		226EB379239E414A0077374D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226EB37C239E414A0077374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		226EB37E239E414A0077374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EB381239E414A0077374D /* HelloWordWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloWordWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EB387239E414A0077374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		226EB389239E414B0077374D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226EB38B239E414B0077374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EB390239E414B0077374D /* HelloWordWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HelloWordWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EB395239E414B0077374D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		226EB397239E414B0077374D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		226EB399239E414B0077374D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226EB39B239E414B0077374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EB3A9239E461C0077374D /* EmojiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		226EB36A239E41490077374D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EB38D239E414B0077374D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226EB364239E41490077374D = {
+			isa = PBXGroup;
+			children = (
+				226EB36F239E41490077374D /* HelloWordWatch */,
+				226EB385239E414A0077374D /* HelloWordWatch WatchKit App */,
+				226EB394239E414B0077374D /* HelloWordWatch WatchKit Extension */,
+				226EB36E239E41490077374D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		226EB36E239E41490077374D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226EB36D239E41490077374D /* HelloWordWatch.app */,
+				226EB381239E414A0077374D /* HelloWordWatch WatchKit App.app */,
+				226EB390239E414B0077374D /* HelloWordWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		226EB36F239E41490077374D /* HelloWordWatch */ = {
+			isa = PBXGroup;
+			children = (
+				226EB370239E41490077374D /* AppDelegate.swift */,
+				226EB372239E41490077374D /* SceneDelegate.swift */,
+				226EB374239E41490077374D /* ViewController.swift */,
+				226EB376239E41490077374D /* Main.storyboard */,
+				226EB379239E414A0077374D /* Assets.xcassets */,
+				226EB37B239E414A0077374D /* LaunchScreen.storyboard */,
+				226EB37E239E414A0077374D /* Info.plist */,
+			);
+			path = HelloWordWatch;
+			sourceTree = "<group>";
+		};
+		226EB385239E414A0077374D /* HelloWordWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				226EB386239E414A0077374D /* Interface.storyboard */,
+				226EB389239E414B0077374D /* Assets.xcassets */,
+				226EB38B239E414B0077374D /* Info.plist */,
+			);
+			path = "HelloWordWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		226EB394239E414B0077374D /* HelloWordWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				226EB3A9239E461C0077374D /* EmojiData.swift */,
+				226EB395239E414B0077374D /* InterfaceController.swift */,
+				226EB397239E414B0077374D /* ExtensionDelegate.swift */,
+				226EB399239E414B0077374D /* Assets.xcassets */,
+				226EB39B239E414B0077374D /* Info.plist */,
+			);
+			path = "HelloWordWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		226EB36C239E41490077374D /* HelloWordWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EB3A6239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch" */;
+			buildPhases = (
+				226EB369239E41490077374D /* Sources */,
+				226EB36A239E41490077374D /* Frameworks */,
+				226EB36B239E41490077374D /* Resources */,
+				226EB3A5239E414B0077374D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226EB384239E414A0077374D /* PBXTargetDependency */,
+			);
+			name = HelloWordWatch;
+			productName = HelloWordWatch;
+			productReference = 226EB36D239E41490077374D /* HelloWordWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		226EB380239E414A0077374D /* HelloWordWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EB3A2239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch WatchKit App" */;
+			buildPhases = (
+				226EB37F239E414A0077374D /* Resources */,
+				226EB3A1239E414B0077374D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226EB393239E414B0077374D /* PBXTargetDependency */,
+			);
+			name = "HelloWordWatch WatchKit App";
+			productName = "HelloWordWatch WatchKit App";
+			productReference = 226EB381239E414A0077374D /* HelloWordWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		226EB38F239E414B0077374D /* HelloWordWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EB39E239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch WatchKit Extension" */;
+			buildPhases = (
+				226EB38C239E414B0077374D /* Sources */,
+				226EB38D239E414B0077374D /* Frameworks */,
+				226EB38E239E414B0077374D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HelloWordWatch WatchKit Extension";
+			productName = "HelloWordWatch WatchKit Extension";
+			productReference = 226EB390239E414B0077374D /* HelloWordWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		226EB365239E41490077374D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = l.b.cheng;
+				TargetAttributes = {
+					226EB36C239E41490077374D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					226EB380239E414A0077374D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					226EB38F239E414B0077374D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 226EB368239E41490077374D /* Build configuration list for PBXProject "HelloWordWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 226EB364239E41490077374D;
+			productRefGroup = 226EB36E239E41490077374D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				226EB36C239E41490077374D /* HelloWordWatch */,
+				226EB380239E414A0077374D /* HelloWordWatch WatchKit App */,
+				226EB38F239E414B0077374D /* HelloWordWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		226EB36B239E41490077374D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EB37D239E414A0077374D /* LaunchScreen.storyboard in Resources */,
+				226EB37A239E414A0077374D /* Assets.xcassets in Resources */,
+				226EB378239E41490077374D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EB37F239E414A0077374D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EB38A239E414B0077374D /* Assets.xcassets in Resources */,
+				226EB388239E414A0077374D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EB38E239E414B0077374D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EB39A239E414B0077374D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		226EB369239E41490077374D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EB375239E41490077374D /* ViewController.swift in Sources */,
+				226EB371239E41490077374D /* AppDelegate.swift in Sources */,
+				226EB373239E41490077374D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EB38C239E414B0077374D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EB398239E414B0077374D /* ExtensionDelegate.swift in Sources */,
+				226EB3AA239E461C0077374D /* EmojiData.swift in Sources */,
+				226EB396239E414B0077374D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		226EB384239E414A0077374D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226EB380239E414A0077374D /* HelloWordWatch WatchKit App */;
+			targetProxy = 226EB383239E414A0077374D /* PBXContainerItemProxy */;
+		};
+		226EB393239E414B0077374D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226EB38F239E414B0077374D /* HelloWordWatch WatchKit Extension */;
+			targetProxy = 226EB392239E414B0077374D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		226EB376239E41490077374D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EB377239E41490077374D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		226EB37B239E414A0077374D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EB37C239E414A0077374D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		226EB386239E414A0077374D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EB387239E414A0077374D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		226EB39C239E414B0077374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		226EB39D239E414B0077374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		226EB39F239E414B0077374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HelloWordWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		226EB3A0239E414B0077374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HelloWordWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		226EB3A3239E414B0077374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HelloWordWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HelloWordWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		226EB3A4239E414B0077374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HelloWordWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HelloWordWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		226EB3A7239E414B0077374D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWordWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		226EB3A8239E414B0077374D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWordWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l.cheng.HelloWordWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		226EB368239E41490077374D /* Build configuration list for PBXProject "HelloWordWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EB39C239E414B0077374D /* Debug */,
+				226EB39D239E414B0077374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EB39E239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EB39F239E414B0077374D /* Debug */,
+				226EB3A0239E414B0077374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EB3A2239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EB3A3239E414B0077374D /* Debug */,
+				226EB3A4239E414B0077374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EB3A6239E414B0077374D /* Build configuration list for PBXNativeTarget "HelloWordWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EB3A7239E414B0077374D /* Debug */,
+				226EB3A8239E414B0077374D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 226EB365239E41490077374D /* Project object */;
+}
