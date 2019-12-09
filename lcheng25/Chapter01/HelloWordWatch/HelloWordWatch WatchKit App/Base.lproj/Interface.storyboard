@@ -13,7 +13,7 @@
                     <items>
                         <group width="1" alignment="left" id="mEG-eM-i4e">
                             <items>
-                                <label alignment="center" text="Hello Word Watch" textAlignment="center" id="9mS-Q5-n0T">
+                                <label alignment="center" text="Hello World Watch" textAlignment="center" id="9mS-Q5-n0T">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>
