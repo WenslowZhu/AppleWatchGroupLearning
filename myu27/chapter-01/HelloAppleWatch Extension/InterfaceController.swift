@@ -29,7 +29,7 @@ class InterfaceController: WKInterfaceController {
     
     func showText() {
 //        let random = arc4random()%100 + 1
-//        let random2 = arc4random()%100 + 1
+//        let random2 = arc4random()%100 + 12
 //        button.setTitle("点击改变\(random)\n\(random2)")
 
         let peopleIndex = emoji.people.count.random()
