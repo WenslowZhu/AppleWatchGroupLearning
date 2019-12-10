@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Cookie-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="Cookie" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloAppleWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.90000000000000002" alignment="center" verticalAlignment="bottom" title="Button" id="K24-FE-Ut5">
+                            <color key="backgroundColor" red="0.95523184537887573" green="0.80361230816381402" blue="0.65902666551466804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                            <connections>
+                                <action selector="newShow" destination="AgC-eL-Hgc" id="H27-XE-PJR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="K24-FE-Ut5" id="OLq-b8-cuh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-66" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cookie" width="29" height="29"/>
+    </resources>
+</document>
