@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Carnivore-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InitialController" title="Carnivore" spacing="10" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carnivore_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="rfm-Qo-WEU">
+                            <items>
+                                <timer alignment="center" textAlignment="center" id="fOi-nN-W6U">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <button width="1" alignment="left" title="Start Timer" id="4tG-NB-JkJ">
+                                    <connections>
+                                        <action selector="onTimerButton" destination="AgC-eL-Hgc" id="S5K-On-uCJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Weight (oz)" id="P7P-ZH-HqM"/>
+                        <picker height="55" alignment="left" focusStyle="stack" id="mAH-Qu-134">
+                            <connections>
+                                <action selector="onWeightChanged:" destination="AgC-eL-Hgc" id="7Tf-67-TFT"/>
+                            </connections>
+                        </picker>
+                        <label alignment="center" text="Label" id="ReA-6T-1mA"/>
+                        <picker height="100" alignment="left" style="sequence" focusStyle="stack" id="Xvz-re-uKU">
+                            <connections>
+                                <action selector="onTemperatureChanged:" destination="AgC-eL-Hgc" id="H1Z-hQ-VbV"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="temperatureLabel" destination="ReA-6T-1mA" id="tyB-7j-Z93"/>
+                        <outlet property="temperaturePicker" destination="Xvz-re-uKU" id="dpp-Tk-RaH"/>
+                        <outlet property="timer" destination="fOi-nN-W6U" id="Unt-uH-B4r"/>
+                        <outlet property="timerButton" destination="4tG-NB-JkJ" id="sJA-vj-PrA"/>
+                        <outlet property="weightPicker" destination="mAH-Qu-134" id="BC4-St-BBs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>
