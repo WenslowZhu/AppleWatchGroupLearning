@@ -37,28 +37,32 @@ class InterfaceController: WKInterfaceController {
     var ounces = 16
     var cookTemp = MeatTemperature.medium
     var timerRuning = false
-    var usingMetric = false
     
     @IBOutlet weak var timer: WKInterfaceTimer!
-    @IBOutlet weak var weightLabel: WKInterfaceLabel!
-    @IBOutlet weak var cookLabel: WKInterfaceLabel!
     @IBOutlet weak var timerButton: WKInterfaceButton!
+    @IBOutlet weak var weightPicker: WKInterfacePicker!
+    @IBOutlet weak var temperatureLabel: WKInterfaceLabel!
+    @IBOutlet weak var temperaturePicker: WKInterfacePicker!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        updateConfiguration()
-    }
-    
-    func updateConfiguration() {
-        cookLabel.setText(cookTemp.stringValue)
-        var weight = ounces
-        var unit = "oz"
-        if usingMetric {
-            let grams = Double(ounces) * 28.3495
-            weight = Int(grams)
-            unit = "gm"
+        var weightItems: [WKPickerItem] = []
+        for i in 1...32 {
+            let item = WKPickerItem()
+            item.title = String(i)
+            weightItems.append(item)
         }
-        weightLabel.setText("Weight: \(weight) \(unit)")
+        weightPicker.setItems(weightItems)
+        weightPicker.setSelectedItemIndex(ounces - 1)
+        
+        var tempItems: [WKPickerItem] = []
+        for i in 1...4 {
+            let item = WKPickerItem()
+            item.contentImage = WKImage(imageName: "temp-\(i)")
+            tempItems.append(item)
+        }
+        temperaturePicker.setItems(tempItems)
+        onTemperatureChanged(0)
     }
     
     @IBAction func onTimerButton() {
@@ -74,28 +78,19 @@ class InterfaceController: WKInterfaceController {
         timerRuning = !timerRuning
         scroll(to: timer, at: .top, animated: true)
     }
-
-    @IBAction func onMinusButton() {
-        ounces -= 1
-        updateConfiguration()
+    
+    @IBAction func onWeightChanged(_ value: Int) {
+        ounces = value + 1
     }
     
-    @IBAction func onPlusButton() {
-        ounces += 1
-        updateConfiguration()
-    }
-    @IBAction func onTempChange(_ value: Float) {
-        print(value)
-        if let temp = MeatTemperature(rawValue: Int(value)) {
-            cookTemp = temp
-            updateConfiguration()
-        }
+    @IBAction func onTemperatureChanged(_ value: Int) {
+        let temp = MeatTemperature(rawValue: value)!
+        cookTemp = temp
+        temperatureLabel.setText(temp.stringValue)
     }
     
-    @IBAction func onMetricChanged(_ value: Bool) {
-        usingMetric = value
-        updateConfiguration()
-    }
+    
+    
     
     override func interfaceOffsetDidScrollToTop() {
         print("User scrolled to top")
