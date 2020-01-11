@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xca-ke-Qcl">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Recipes-->
+        <scene sceneID="UWD-Xm-tP7">
+            <objects>
+                <controller title="Recipes" id="Xca-ke-Qcl" customClass="RecipesController" customModule="Recipes_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="5md-K0-47J">
+                            <items>
+                                <tableRow identifier="RecipeRowType" id="2ls-RP-enM" customClass="RecipeRowController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="oUx-Pe-CbY">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="jHP-A2-0f1"/>
+                                            <label alignment="left" text="Label" id="QMu-UW-d7Q">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <connections>
+                                            <segue destination="Sc1-vE-NTW" kind="push" id="jyU-c5-lCW"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ingredientsLabel" destination="QMu-UW-d7Q" id="3A4-3C-sRi"/>
+                                        <outlet property="titleLabel" destination="jHP-A2-0f1" id="RSQ-SL-esx"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="HeaderRowType" selectable="NO" id="QsJ-XU-1bh" customClass="HeaderRowController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="1AL-Ef-piV">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="veggies" id="Dbj-zi-kLm"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Sla-eA-Yp2">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="Dbj-zi-kLm" id="Xel-2K-mG2"/>
+                                        <outlet property="label" destination="Sla-eA-Yp2" id="CHa-qn-DRk"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="5md-K0-47J" id="xIV-uF-HhZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="302"/>
+        </scene>
+        <!--Recipe Detail Controller-->
+        <scene sceneID="2Gd-Se-GC0">
+            <objects>
+                <controller id="Sc1-vE-NTW" customClass="RecipeDetailController" customModule="Recipes_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Aly-rj-zB6">
+                            <items>
+                                <tableRow identifier="RecipeHeader" selectable="NO" id="iqi-Bk-Tew" customClass="RecipeHeaderController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="HMe-gw-2IM">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="ON4-fw-B3C">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="ON4-fw-B3C" id="pSj-Zy-GWx"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="RecipeStep" id="uuc-KT-ISN" customClass="RecipeStepController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="mbv-7I-goG">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="mP2-pa-SyN"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="stepLabel" destination="mP2-pa-SyN" id="cZT-E2-WyI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Aly-rj-zB6" id="G9r-0j-0Ok"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="532" y="302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="veggies" width="30" height="30"/>
+    </resources>
+</document>
