@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ColorPicker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="30" height="30" alignment="left" id="PJ2-l6-7c4">
+                            <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <label alignment="left" text="#00FFFF" id="ixd-MP-uaa"/>
+                        <button width="1" alignment="left" title="More" id="TMk-Zv-vAH">
+                            <connections>
+                                <segue destination="QHk-Mh-PKN" kind="push" id="97g-Oh-xvJ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Change Color" id="rAh-Mx-JCw">
+                            <connections>
+                                <action selector="changeColors" destination="AgC-eL-Hgc" id="gF1-sc-LuJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="colorGroup" destination="PJ2-l6-7c4" id="DAB-py-W1O"/>
+                        <outlet property="label" destination="ixd-MP-uaa" id="mnx-5p-HBL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="387"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="etF-An-owr">
+            <objects>
+                <controller id="QHk-Mh-PKN" customClass="DetailController" customModule="ColorPicker_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Hex" id="pc7-gD-M8E">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="eGl-p2-pFD"/>
+                        <label alignment="left" text="RGB" id="VQz-JP-Jya">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="vGi-gH-ly5"/>
+                        <label alignment="left" text="HSL" id="AkB-jA-Gfd">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="MPw-Kp-F31"/>
+                    </items>
+                    <connections>
+                        <outlet property="hexLabel" destination="eGl-p2-pFD" id="9t3-hy-Z2i"/>
+                        <outlet property="hslLabel" destination="MPw-Kp-F31" id="VKA-8m-Mpn"/>
+                        <outlet property="rgbLabel" destination="vGi-gH-ly5" id="gcA-U1-JcY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="435" y="788"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="vCf-Bc-X4q">
+            <objects>
+                <controller identifier="ColorPalette" title="Done" id="gGF-Sf-ACv" customClass="ColorController" customModule="ColorPicker_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="h7d-4g-uct">
+                            <items>
+                                <label alignment="left" verticalAlignment="bottom" text="Label" id="hCW-mx-Zr1"/>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="6Az-sl-PFB">
+                        <items>
+                            <menuItem title="Darken" image="darken" id="dOo-g9-DuH">
+                                <connections>
+                                    <action selector="onDarken" destination="gGF-Sf-ACv" id="YM9-5c-xMe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Lighten" image="lighten" id="EYu-pY-3wV">
+                                <connections>
+                                    <action selector="onLighten" destination="gGF-Sf-ACv" id="1fF-Ms-K5j"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="h7d-4g-uct" id="BDx-JL-P4Z"/>
+                        <outlet property="label" destination="hCW-mx-Zr1" id="Qqo-bZ-jDq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="631" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="darken" width="54" height="54"/>
+        <image name="lighten" width="54" height="54"/>
+    </resources>
+</document>
